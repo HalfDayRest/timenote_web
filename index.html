@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="head">
+        <img src="public/img/title.png" />
+        <div id="menus">
+          <a class="menu">首页</a>
+          <a class="menu">设计</a>
+          <a class="menu">功能</a>
+          <a class="menu">下载</a>
+          <a class="menu">反馈</a>
+        </div>
+      </div>
+      <div id="timenote-top">
+        <div id="timenote-top-left">
+          <img id="logo" src="./public/img/logo.png" />
+          <p id="slogan">
+            记时光，<br /><span class="purple">多端同步</span>的<br />全能笔记。
+          </p>
+          <div id="download-buttons">
+            <button id="windows-version">下载 Windows 版</button>
+            <button id="other-version">
+              查看其他版本 <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div id="timenote-top-right">
+          <img src="./public/img/top.png" />
+        </div>
+      </div>
+      <div id="timenote-design" class="card-div">
+        <div class="card-content">
+          <p class="card-48-text">清爽高颜值，<br />设计再升级</p>
+          <p class="card-24-text">
+            全面采用统一设计语言，<br />更好地聚焦核心体验。
+          </p>
+          <button id="design-download">下载体验</button>
+        </div>
+        <img src="./public/img/design.png" />
+      </div>
+      <div id="timenote-features">
+        <p class="features-title">一切功能，<br />都离不开良好的基础体验。</p>
+        <div class="features-div" id="safe-save">
+          <div class="features-content-div">
+            <img class="icon" src="./public/img/icon_save.png" />
+            <p class="features-title">安全保存</p>
+            <p class="features-message">
+              强保存和弱保存，<br />最大程度避免意外丢失
+            </p>
+          </div>
+          <img src="./public/img/safe-save.png" />
+        </div>
+        <div class="features-div" id="format">
+          <div class="features-content-div">
+            <img class="icon" src="./public/img/icon_text.png" />
+            <p class="features-title">格式多样</p>
+            <p class="features-message">
+              丰富多样的文本格式工具，
+              <br />自定义你的时光笔记。
+            </p>
+          </div>
+          <img src="./public/img/format.png" />
+        </div>
+        <div class="features-div" id="markdown">
+          <div class="features-content-div">
+            <img class="icon" src="./public/img/icon_markdown.png" />
+            <p class="features-title">Markdown</p>
+            <p class="features-message">
+              畅快写作，
+              <br />即时预览。
+            </p>
+          </div>
+          <img src="./public/img/markdown.png" />
+        </div>
+        <p class="features-title">笔记体验，<br />我们更先一步。</p>
+      </div>
+      <div id="timenote-device" class="card-div">
+        <div class="card-content">
+          <p class="card-48-text">多端同步，<br />全面覆盖。</p>
+          <p class="card-20-text">
+            包括 Andorid、Windows、Linux 客户端，<br />后续可能会兼容 iOS 和
+            macOS，<br />
+            你可以随时随地在电脑、手机、平板上访问你的所有内容。
+          </p>
+        </div>
+        <img src="./public/img/device.png" />
+      </div>
+      <div id="timenote-inspiration" class="card-div">
+        <div class="card-content">
+          <p class="card-48-text">灵感胶囊，<br />记录闪现。</p>
+          <p class="card-20-text">
+            即将推出的灵感胶囊功能，<br />
+            不仅能随时记录你的想法，<br />
+            还能快速在你的任意笔记中随时调用。
+          </p>
+        </div>
+        <img src="./public/img/inspiration.png" />
+      </div>
+      <div id="timenote-download">
+        <p id="download-title">下载记时光</p>
+        <div id="download-versions">
+          <div class="download-card">
+            <div>
+              <img class="icon" src="./public/img/icon_windows.png" />
+              <p class="download-platform">Windows</p>
+            </div>
+            <p class="download-click">点击下载</p>
+          </div>
+          <div class="download-card">
+            <div>
+              <img class="icon" src="./public/img/icon_android.png" />
+              <p class="download-platform">Android</p>
+            </div>
+            <p class="download-click">点击下载</p>
+          </div>
+          <div class="download-card">
+            <div>
+              <img class="icon" src="./public/img/icon_linux.png" />
+              <p class="download-platform">Linux</p>
+            </div>
+            <p class="download-click">点击下载</p>
+          </div>
+        </div>
+      </div>
+      <div id="feedback" class="card-div">
+        <div class="card-content">
+          <p class="card-48-text">
+            遇到问题，需要反馈？<br />欢迎加入 QQ 群联系我们
+          </p>
+          <p id="qq-group" class="card-20-text">QQ 群：1056051634</p>
+        </div>
+        <img src="./public/img/feedback.png" />
+      </div>
+      <div id="footer">
+        <div id="footer-website">
+          <p>一个网址</p>
+          <img src="./public/img/logo.png" />
+        </div>
+        <div id="footer-copyright">
+          <p>balabalabala</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

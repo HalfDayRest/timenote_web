@@ -1,0 +1,20 @@
+{
+  "name": "timenote-web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss-load-config": "^3.1.4",
+    "postcss-pxtorem": "^6.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.2"
+  },
+  "dependencies": {
+    "sass": "^1.50.1"
+  }
+}
