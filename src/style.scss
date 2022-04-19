@@ -12,13 +12,41 @@
   background-color: #f7f7f7;
 }
 
-#head {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.head-up {
   padding-top: 75px;
-  padding-left: 108px;
-  padding-right: 108px;
+  opacity: 1;
+}
+
+.head-down {
+  padding-top: 25px;
+  opacity: 0.6;
+}
+
+.menu-select {
+  &::after {
+    background-color: var(--color-purple);
+  }
+}
+
+#head {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding-bottom: 30px;
+  transition: 0.2s;
+
+  #head-div {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   img {
     width: 116px;
     height: 28px;
@@ -32,6 +60,19 @@
       margin-left: 57px;
       color: #757c89;
       font-size: 20px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s;
+      &::after {
+        content: "";
+        margin-top: 15px;
+        width: 30px;
+        height: 5px;
+        border-radius: 20px;
+      }
       @include text-hover;
     }
   }
@@ -43,6 +84,7 @@
   margin-top: 170px;
   padding-left: 143px;
   overflow: hidden;
+  height: 100vh;
 
   #timenote-top-left {
     display: flex;

@@ -9,6 +9,10 @@
   --color-text-hover: #7948ea;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @mixin scale-anim {
   transition: 0.3s;
   &:hover {
