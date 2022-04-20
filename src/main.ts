@@ -3,8 +3,6 @@ import "./rem";
 
 window.addEventListener("scroll", handleScroll, true);
 
-const log = console.log;
-
 let i = 0;
 let currMenu = 0;
 let head = document.getElementById("head");
