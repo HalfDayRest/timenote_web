@@ -1,11 +1,13 @@
 function setRem() {
+  let desingWidth = 1920;
+  let desingHeight = 1080;
   let baseSize = 100;
-  let basePc = baseSize / 1920;
+  let basePc = baseSize / desingWidth;
   let vW = window.innerWidth;
   let vH = window.innerHeight;
-  let dueH = (vW * 1080) / 1920;
+  let dueH = (vW * desingHeight) / desingWidth;
   if (vH < dueH) {
-    vW = (vH * 1920) / 1080;
+    vW = (vH * desingWidth) / desingHeight;
   }
   if (vW < 1300) {
     vW = 1300;

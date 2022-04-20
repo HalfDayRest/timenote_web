@@ -4,6 +4,7 @@ import "./rem";
 window.addEventListener("scroll", handleScroll, true);
 
 let i = 0;
+let currMenu = 0;
 let head = document.getElementById("head");
 let menus = document.getElementById("menus");
 
@@ -48,6 +49,8 @@ function handleScroll() {
 }
 
 function selectMenu(pos: number) {
+  if (currMenu === pos) return;
+  currMenu = pos;
   let childens = menus?.children;
   for (let i = 0; i < 5; i++) {
     childens![i].classList.remove("menu-select");
