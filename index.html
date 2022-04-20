@@ -34,8 +34,11 @@
             记时光，<br /><span class="purple">多端同步</span>的<br />全能笔记。
           </p>
           <div id="download-buttons">
-            <button id="windows-version">下载 Windows 版</button>
-            <button id="other-version">
+            <button id="platform-version">下载 Windows 版</button>
+            <button
+              id="other-version"
+              onclick="window.location.href = '#timenote-download'"
+            >
               查看其他版本 <i class="fa-solid fa-angle-right"></i>
             </button>
           </div>
@@ -102,6 +105,7 @@
           </p>
         </div>
         <img src="./public/img/device.png" />
+        <div id="device-background"></div>
       </div>
       <div id="timenote-inspiration" class="card-div">
         <div class="card-content">
@@ -113,6 +117,7 @@
           </p>
         </div>
         <img src="./public/img/inspiration.png" />
+        <div id="inspiration-background"></div>
       </div>
       <div id="timenote-download">
         <p id="download-title">下载记时光</p>

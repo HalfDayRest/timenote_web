@@ -3,6 +3,8 @@ import "./rem";
 
 window.addEventListener("scroll", handleScroll, true);
 
+const log = console.log;
+
 let i = 0;
 let currMenu = 0;
 let head = document.getElementById("head");
@@ -65,4 +67,43 @@ function checkVisibleToTop(elm: HTMLElement) {
     window.innerHeight
   );
   return !(rect.bottom < 0 || rect.top - viewHeight >= -viewHeight + 200);
+}
+
+window.onload = function () {
+  let downloadPlatformEl = document.getElementById(
+    "platform-version"
+  ) as HTMLElement;
+  switch (getSystemName()) {
+    case "windows":
+      downloadPlatformEl.innerHTML = "下载 Windows 版";
+      break;
+    case "mac":
+      downloadPlatformEl.innerHTML = "下载 Mac 版";
+      break;
+    case "linux":
+      downloadPlatformEl.innerHTML = "下载 Linux 版";
+      break;
+    case "android":
+      downloadPlatformEl.innerHTML = "下载 Android 版";
+      break;
+    default:
+      downloadPlatformEl.innerHTML = "下载 Windows 版";
+  }
+};
+
+function getSystemName(): string {
+  let userAgent = navigator.userAgent.toLowerCase();
+  if (userAgent.indexOf("windows") != -1) {
+    return "windows";
+  }
+  if (userAgent.indexOf("macintosh") != -1) {
+    return "mac";
+  }
+  if (userAgent.indexOf("linux") != -1) {
+    return "linux";
+  }
+  if (userAgent.indexOf("android") != -1) {
+    return "android";
+  }
+  return "windows";
 }
