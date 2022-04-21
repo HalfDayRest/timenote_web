@@ -1,0 +1,41 @@
+#timenote-design {
+  background-image: linear-gradient(
+    133.65deg,
+    rgba(121, 72, 234, 1) 0%,
+    rgba(91, 41, 207, 1) 100%
+  );
+  color: #fff;
+
+  img {
+    width: 916.15px;
+    height: 1124.29px;
+    align-self: center;
+    margin-right: -182.15px;
+  }
+
+  #design-download {
+    margin-top: 60px;
+    cursor: pointer;
+    width: 174px;
+    height: 58px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    border-style: none;
+    font-size: 24px;
+  }
+}
+
+@media screen and(max-width: 1000px) {
+  #timenote-design {
+    height: 1197px;
+    padding-bottom: 65px;
+
+    img {
+      width: 755.2px;
+      height: 926.76px;
+      margin-right: -192px;
+      align-self: flex-end;
+    }
+  }
+}

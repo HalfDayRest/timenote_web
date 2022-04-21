@@ -1,0 +1,99 @@
+#timenote-features {
+  margin-top: 94px;
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .icon {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  .features-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  .features-content-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-title {
+    margin-top: 15px;
+    font-size: 48px;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .features-message {
+    margin-top: 15px;
+    font-size: 36px;
+    color: #000;
+    text-align: left;
+  }
+
+  .features-main-title {
+    text-align: left;
+    font-size: 60px;
+    color: #444e5d;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+
+  #all-features {
+    width: 90%;
+  }
+
+  #safe-save {
+    img {
+      width: 443px;
+      height: 276px;
+    }
+  }
+
+  #format {
+    flex-direction: row-reverse;
+
+    img {
+      width: 503px;
+      height: 272px;
+    }
+  }
+
+  #markdown {
+    img {
+      width: 432px;
+      height: 311px;
+    }
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timenote-features {
+    .features-div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #format {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #all-features {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+}

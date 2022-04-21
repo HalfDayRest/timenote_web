@@ -9,8 +9,8 @@ function setRem() {
   if (vH < dueH) {
     vW = (vH * desingWidth) / desingHeight;
   }
-  if (vW < 1300) {
-    vW = 1300;
+  if (vW < 1000) {
+    vW = 1000;
   }
   let rem = vW * basePc;
   document.documentElement.style.fontSize = rem + "px";

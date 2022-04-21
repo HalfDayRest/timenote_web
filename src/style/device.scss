@@ -1,0 +1,47 @@
+#timenote-device {
+  background-color: #f8f6fe !important;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 1194.16px;
+    height: 435.29px;
+    margin-right: -298.66px;
+    z-index: 2;
+  }
+
+  #device-img {
+    margin-right: -298.66px;
+    z-index: 2;
+  }
+
+  #device-background {
+    z-index: 1;
+    position: absolute;
+    bottom: -900px;
+    right: -400px;
+    width: 1415px;
+    height: 1415px;
+    background: linear-gradient(
+      128.08deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(121, 72, 234, 1) 100%
+    );
+    border-radius: 50%;
+    border: 1px solid rgba(166, 166, 166, 1);
+    filter: blur(100px);
+    transform: rotate(-296.54433959923955deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timenote-device {
+    height: 1189px;
+
+    img {
+      margin-right: -700px;
+      align-self: flex-end;
+      margin-top: 132px;
+    }
+  }
+}

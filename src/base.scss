@@ -98,3 +98,15 @@ html {
 .purple {
   color: var(--color-purple);
 }
+
+@media screen and (max-width: 1000px) {
+  .card-div {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .card-content {
+      padding-left: 55px;
+    }
+  }
+}

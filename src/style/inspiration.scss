@@ -1,0 +1,41 @@
+#timenote-inspiration {
+  background-color: #f7fffb;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    height: 579px;
+    margin-right: 218px;
+    z-index: 2;
+  }
+
+  #inspiration-background {
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 1189px;
+    height: 1189px;
+    border-radius: 50%;
+    background: linear-gradient(
+      180deg,
+      rgba(132, 250, 176, 1) 0%,
+      rgba(143, 211, 244, 1) 100%
+    );
+    filter: blur(97px);
+    transform: rotate(-296.54433959923955deg);
+    opacity: 0.1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timenote-inspiration {
+    height: 1036px;
+    padding-bottom: 75px;
+    img {
+      align-self: center;
+      margin-right: 0px;
+      margin-top: 98px;
+    }
+  }
+}
