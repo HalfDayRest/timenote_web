@@ -1,7 +1,8 @@
 #timenote-device {
-  background-color: #f8f6fe !important;
+  background-color: #009dff;
   overflow: hidden;
   position: relative;
+  color: #fff;
 
   img {
     width: 1194.16px;
@@ -16,6 +17,7 @@
   }
 
   #device-background {
+    display: none;
     z-index: 1;
     position: absolute;
     bottom: -900px;

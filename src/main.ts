@@ -91,6 +91,9 @@ window.onload = function () {
 
 function getSystemName(): string {
   let userAgent = navigator.userAgent.toLowerCase();
+  if (userAgent.indexOf("android") != -1) {
+    return "android";
+  }
   if (userAgent.indexOf("windows") != -1) {
     return "windows";
   }
@@ -99,9 +102,6 @@ function getSystemName(): string {
   }
   if (userAgent.indexOf("linux") != -1) {
     return "linux";
-  }
-  if (userAgent.indexOf("android") != -1) {
-    return "android";
   }
   return "windows";
 }

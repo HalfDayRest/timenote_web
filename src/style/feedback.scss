@@ -1,5 +1,5 @@
 #feedback {
-  background-color: #e5e7eb;
+  background-color: #fff;
 
   #qq-group {
     margin-top: 50px;
@@ -9,5 +9,18 @@
     width: 300px;
     height: 288.88px;
     margin-right: 72px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #feedback {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 116px;
+    padding-bottom: 74px;
+
+    img {
+      align-self: center;
+    }
   }
 }

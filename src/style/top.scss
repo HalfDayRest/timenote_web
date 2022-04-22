@@ -74,17 +74,32 @@
   #timenote-top {
     flex-direction: column-reverse;
     height: auto;
-    #download-buttons {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    padding-left: 0px;
 
-      #platform-version {
-        margin-right: 0px;
-        margin-bottom: 35px;
+    #timenote-top-left {
+      #slogan,
+      #logo {
+        margin-left: 50px;
       }
-      #other-version {
-        margin-left: 0px;
+
+      #download-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #platform-version {
+          margin-right: 0px;
+          margin-bottom: 35px;
+          width: 350px;
+          height: 120px;
+          font-size: 36px;
+        }
+        #other-version {
+          margin-left: 0px;
+          width: 350px;
+          height: 120px;
+          font-size: 36px;
+        }
       }
     }
   }
