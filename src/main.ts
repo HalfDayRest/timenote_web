@@ -7,6 +7,7 @@ let i = 0;
 let currMenu = 0;
 let head = document.getElementById("head");
 let menus = document.getElementById("menus");
+let barMenus = document.getElementById("bar-menus");
 
 let headEl = document.getElementById("timenote-top");
 let timenoteDesignEl = document.getElementById("timenote-design");
@@ -23,11 +24,11 @@ function handleScroll() {
   i = scrollTop;
   if (Math.abs(scroll) >= 50) {
     if (scroll < 0) {
-      head?.classList.remove("head-down");
-      head?.classList.add("head-up");
+      head?.classList.remove("down");
+      head?.classList.add("up");
     } else {
-      head?.classList.add("head-down");
-      head?.classList.remove("head-up");
+      head?.classList.add("down");
+      head?.classList.remove("up");
     }
   }
 
@@ -51,11 +52,14 @@ function handleScroll() {
 function selectMenu(pos: number) {
   if (currMenu === pos) return;
   currMenu = pos;
-  let childens = menus?.children;
+  let childrens = menus?.children;
+  let childrens2 = barMenus?.children;
   for (let i = 0; i < 5; i++) {
-    childens![i].classList.remove("menu-select");
+    childrens![i].classList.remove("menu-select");
+    childrens2![i].classList.remove("menu-select");
   }
   menus?.children[pos].classList.add("menu-select");
+  barMenus?.children[pos].classList.add("menu-select");
 }
 
 function checkVisibleToTop(elm: HTMLElement) {
@@ -87,6 +91,10 @@ window.onload = function () {
     default:
       downloadPlatformEl.innerHTML = "下载 Windows 版";
   }
+
+  document.getElementById("bar-menus-btn")!.onclick = function () {
+    document.getElementById("bar-menus")?.classList.toggle("show");
+  };
 };
 
 function getSystemName(): string {

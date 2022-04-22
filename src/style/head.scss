@@ -10,6 +10,17 @@
   padding-bottom: 30px;
   transition: 0.2s;
 
+  &.up {
+    padding-top: 75px;
+    opacity: 1;
+  }
+
+  &.down {
+    padding-top: 25px;
+    opacity: 0.95;
+    padding-bottom: 25px !important;
+  }
+
   #head-div {
     width: 85%;
     display: flex;
@@ -46,17 +57,11 @@
       @include text-hover;
     }
   }
-}
 
-.head-up {
-  padding-top: 75px;
-  opacity: 1;
-}
-
-.head-down {
-  padding-top: 25px;
-  opacity: 0.95;
-  padding-bottom: 25px !important;
+  #bar-menus,
+  #bar-menus-btn {
+    display: none;
+  }
 }
 
 .menu-select {
@@ -65,5 +70,54 @@
 
   &::after {
     background-color: var(--color-purple);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #head {
+    #menus {
+      display: none;
+    }
+
+    #bar-menus-btn {
+      display: block;
+      cursor: pointer;
+      width: 65px;
+      height: 65px;
+      border-radius: 10px;
+      border-style: none;
+      background-color: #fff;
+      box-shadow: 0.1px 1.2px 2.2px rgba(0, 0, 0, 0.014),
+        0.3px 2.9px 5.3px rgba(0, 0, 0, 0.02),
+        0.6px 5.5px 10px rgba(0, 0, 0, 0.024),
+        1.1px 9.8px 17.9px rgba(0, 0, 0, 0.029),
+        2.1px 18.4px 33.4px rgba(0, 0, 0, 0.036),
+        5px 44px 80px rgba(0, 0, 0, 0.05);
+    }
+
+    #bar-menus.show {
+      display: flex;
+    }
+
+    #bar-menus {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 37px;
+      justify-content: space-around;
+      align-items: center;
+      width: 228px;
+      height: 584px;
+      padding-top: 26px;
+      top: 185px;
+      right: 50px;
+    }
+
+    .bar-menu {
+      font-size: 36px;
+      color: #757c89;
+      text-decoration: none;
+    }
   }
 }
