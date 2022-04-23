@@ -1,21 +1,21 @@
 function setRem() {
-  let desingWidth = 1920;
-  let desingHeight = 1080;
-  let baseSize = 100;
-  let basePc = baseSize / desingWidth;
-  let vW = window.innerWidth;
-  let vH = window.innerHeight;
-  let dueH = (vW * desingHeight) / desingWidth;
+  let desingWidth = 1920
+  let desingHeight = 1080
+  let baseSize = 100
+  let basePc = baseSize / desingWidth
+  let vW = window.innerWidth
+  let vH = window.innerHeight
+  let dueH = (vW * desingHeight) / desingWidth
   if (vH < dueH) {
-    vW = (vH * desingWidth) / desingHeight;
+    vW = (vH * desingWidth) / desingHeight
   }
   if (vW < 1000) {
-    vW = 1000;
+    vW = 1000
   }
-  let rem = vW * basePc;
-  document.documentElement.style.fontSize = rem + "px";
+  let rem = vW * basePc
+  document.documentElement.style.fontSize = rem + 'px'
 }
-setRem();
+setRem()
 window.onresize = function () {
-  setRem();
-};
+  setRem()
+}

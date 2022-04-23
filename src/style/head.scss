@@ -6,7 +6,7 @@
   transition: 0.5s;
   display: flex;
   justify-content: center;
-  background-color: #f7f7f7;
+  background-color: #f2f6fa;
   padding-bottom: 30px;
   transition: 0.2s;
 
@@ -48,28 +48,28 @@
       align-items: center;
       transition: 0.2s;
       &::after {
-        content: "";
+        content: '';
         margin-top: 15px;
         width: 30px;
         height: 5px;
         border-radius: 20px;
       }
       @include text-hover;
+
+      &.select {
+        font-weight: bold;
+        color: #000;
+
+        &::after {
+          background-color: var(--color-purple);
+        }
+      }
     }
   }
 
   #bar-menus,
   #bar-menus-btn {
     display: none;
-  }
-}
-
-.menu-select {
-  font-weight: bold;
-  color: #000;
-
-  &::after {
-    background-color: var(--color-purple);
   }
 }
 
@@ -112,12 +112,17 @@
       padding-top: 26px;
       top: 185px;
       right: 50px;
+      @include card-shadow;
     }
 
     .bar-menu {
       font-size: 36px;
       color: #757c89;
       text-decoration: none;
+      &.select {
+        font-weight: bold;
+        color: #000;
+      }
     }
   }
 }
