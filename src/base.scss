@@ -19,20 +19,20 @@
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url(./fonts/MiSans-Bold.woff2) format("woff2");
+  font-family: 'MiSans';
+  src: url(./fonts/MiSans-Bold.woff2) format('woff2');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url(./fonts/MiSans-Light.woff2) format("woff2");
+  font-family: 'MiSans';
+  src: url(./fonts/MiSans-Light.woff2) format('woff2');
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url(./fonts/MiSans-Regular.woff2) format("woff2");
+  font-family: 'MiSans';
+  src: url(./fonts/MiSans-Regular.woff2) format('woff2');
   font-weight: normal;
 }
 
@@ -87,6 +87,7 @@ html {
 
   .card-content {
     padding-left: 160px;
+    padding-right: 160px;
     text-align: left;
     height: 100%;
     display: flex;

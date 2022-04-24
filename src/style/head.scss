@@ -17,8 +17,15 @@
 
   &.down {
     padding-top: 25px;
-    opacity: 0.95;
+    background-color: #f2f6fa80;
     padding-bottom: 25px !important;
+    backdrop-filter: blur(10px);
+  }
+
+  @-moz-document url-prefix() {
+    &.down {
+      background-color: #f2f6fad8;
+    }
   }
 
   #head-div {
