@@ -38,6 +38,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: auto;
+  scroll-padding-top: 160px;
 }
 
 @mixin scale-anim {
@@ -86,7 +88,7 @@ html {
   @include card-shadow;
 
   .card-content {
-    padding-left: 160px;
+    padding-left: 120px;
     padding-right: 160px;
     text-align: left;
     height: 100%;
@@ -102,13 +104,13 @@ html {
   }
 
   .card-36-text {
-    margin-top: 23px;
+    margin-top: 30px;
     font-size: 36px;
     font-weight: lighter;
   }
 
   .card-20-text {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 20px;
     font-weight: lighter;
   }
@@ -125,9 +127,9 @@ html {
     align-items: flex-start;
 
     .card-content {
-      padding-top: 114px;
-      padding-left: 55px;
-      padding-right: 55px;
+      padding-top: 60px;
+      padding-left: 66px;
+      padding-right: 66px;
     }
   }
 }
