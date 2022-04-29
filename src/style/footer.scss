@@ -16,8 +16,10 @@
   }
 
   #footer-copyright {
-    width: 100%;
     height: 65px;
+    width: var(--card-width);
+    text-align: start;
+    align-items: center;
     background-color: #f2f6fa;
     font-size: 16px;
   }
@@ -25,5 +27,10 @@
   img {
     width: 63px;
     height: 63px;
+  }
+
+  #link {
+    font-size: 24px;
+    color: #444e5d;
   }
 }
