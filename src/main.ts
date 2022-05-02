@@ -4,6 +4,28 @@ import './rem'
 import './downloads'
 import 'animate.css'
 import { addLoadEvent } from './util'
+import VanillaTilt from 'vanilla-tilt'
+import ScrollReveal from 'scrollreveal'
+
+VanillaTilt.init(document.querySelectorAll('.card-div') as any, {
+  max: 1,
+  speed: 300,
+})
+
+ScrollReveal({
+  scale: 0.85,
+  duration: 500,
+}).reveal('.card-div')
+
+ScrollReveal({
+  scale: 0.85,
+  duration: 500,
+}).reveal('.features-div')
+
+ScrollReveal({
+  scale: 0.85,
+  duration: 500,
+}).reveal('.download-card')
 
 addLoadEvent(function () {
   let downloadPlatformEl = document.getElementById(

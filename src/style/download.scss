@@ -70,6 +70,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: start;
     }
     .download-card {
       width: 462px;
@@ -77,6 +78,10 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 40px;
+
+      .download-platform {
+        font-size: 36px;
+      }
 
       .download-content {
         width: 60%;

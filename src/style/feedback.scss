@@ -5,15 +5,21 @@
     margin-top: 50px;
   }
 
+  #join-qq-group {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
   img {
-    width: 300px;
-    height: 288.88px;
+    width: 376.05px;
+    height: 362.12px;
     margin-right: 72px;
   }
 }
 
 @media screen and (max-width: 768px) {
   #feedback {
+    height: 1100px;
     display: flex;
     flex-direction: column-reverse;
     padding-top: 116px;
@@ -21,6 +27,7 @@
 
     img {
       align-self: center;
+      margin-right: 0px;
     }
   }
 }

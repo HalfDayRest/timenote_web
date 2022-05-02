@@ -5,8 +5,8 @@
   color: #fff;
 
   img {
-    width: 1194.16px;
-    height: 435.29px;
+    width: 1248px;
+    height: 489px;
     margin-right: -298.66px;
     z-index: 2;
   }
@@ -38,10 +38,11 @@
 
 @media screen and (max-width: 768px) {
   #timenote-device {
-    height: 1189px;
+    height: 1175px;
+    padding-bottom: 60px;
 
     img {
-      margin-right: -700px;
+      margin-right: -647.16px;
       align-self: flex-end;
       margin-top: 132px;
     }

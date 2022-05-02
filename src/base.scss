@@ -19,32 +19,34 @@
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url(./fonts/MiSans-Bold.woff2) format("woff2");
+  font-family: 'MiSans';
+  src: url(./fonts/MiSans-Bold.woff2) format('woff2');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url(./fonts/MiSans-Light.woff2) format("woff2");
+  font-family: 'MiSans';
+  src: url(./fonts/MiSans-Light.woff2) format('woff2');
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url(./fonts/MiSans-Regular.woff2) format("woff2");
+  font-family: 'MiSans';
+  src: url(./fonts/MiSans-Regular.woff2) format('woff2');
   font-weight: normal;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow: auto;
+  scroll-padding-top: 160px;
 }
 
 @mixin scale-anim {
   transition: 0.3s;
   &:hover {
     filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.3));
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
     scale: 1.1;
   }
 }
@@ -86,7 +88,8 @@ html {
   @include card-shadow;
 
   .card-content {
-    padding-left: 160px;
+    padding-left: 120px;
+    padding-right: 160px;
     text-align: left;
     height: 100%;
     display: flex;
@@ -101,13 +104,13 @@ html {
   }
 
   .card-36-text {
-    margin-top: 23px;
+    margin-top: 30px;
     font-size: 36px;
     font-weight: lighter;
   }
 
   .card-20-text {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 20px;
     font-weight: lighter;
   }
@@ -124,8 +127,9 @@ html {
     align-items: flex-start;
 
     .card-content {
-      padding-left: 55px;
-      padding-right: 55px;
+      padding-top: 60px;
+      padding-left: 66px;
+      padding-right: 66px;
     }
   }
 }
