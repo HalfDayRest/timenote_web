@@ -1,0 +1,63 @@
+#dialogs {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  &.show {
+    display: block;
+  }
+}
+
+.dialog {
+  background: #eeeeee;
+  width: 80%;
+  z-index: 4;
+  margin: 25% auto;
+  overflow: auto;
+  padding: 60px 40px;
+  border-radius: 30px;
+}
+
+.dialog-button {
+  margin-top: 60px;
+  cursor: pointer;
+  width: 229px;
+  height: 81px;
+  margin-right: 40px;
+  background-color: var(--color-purple);
+  color: #fff;
+  border-radius: 25px;
+  border-style: none;
+  font-size: 36px;
+  box-shadow: 0.6px 1.7px 2.2px rgba(121, 72, 234, 0.02),
+    1.3px 4.1px 5.3px rgba(121, 72, 234, 0.028),
+    2.5px 7.8px 10px rgba(121, 72, 234, 0.035),
+    4.5px 13.8px 17.9px rgba(121, 72, 234, 0.042),
+    8.4px 25.9px 33.4px rgba(121, 72, 234, 0.05),
+    20px 62px 80px rgba(121, 72, 234, 0.07);
+  @include button-hover;
+}
+
+#dialog-test-version {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &.show {
+    display: flex;
+  }
+  p {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .dialog {
+    width: 65%;
+    margin: 15% auto;
+  }
+}

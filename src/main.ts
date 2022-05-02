@@ -1,6 +1,7 @@
 import './menu'
 import './style.scss'
 import './rem'
+import './downloads'
 import 'animate.css'
 import { addLoadEvent } from './util'
 
@@ -13,10 +14,7 @@ addLoadEvent(function () {
       downloadPlatformEl.innerHTML = '下载 Windows 版'
       break
     case 'mac':
-      downloadPlatformEl.innerHTML = '下载 Mac 版'
-      break
-    case 'linux':
-      downloadPlatformEl.innerHTML = '下载 Linux 版'
+      downloadPlatformEl.innerHTML = '下载 macOS 版'
       break
     case 'android':
       downloadPlatformEl.innerHTML = '下载 Android 版'
@@ -40,9 +38,6 @@ function getSystemName(): string {
   }
   if (userAgent.indexOf('macintosh') != -1) {
     return 'mac'
-  }
-  if (userAgent.indexOf('linux') != -1) {
-    return 'linux'
   }
   return 'windows'
 }

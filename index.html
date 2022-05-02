@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
     <div id="app">
       <div id="head" class="up">
         <div id="head-div">
-          <img src="public/img/title.png" />
+          <img src="src/img/title.png" />
           <div id="menus">
             <a href="#" class="menu">首页</a>
             <a href="#timenote-design" class="menu">设计</a>
@@ -38,7 +38,7 @@
       </div>
       <div id="timenote-top">
         <div id="timenote-top-left">
-          <img id="logo" src="./public/img/logo.png" />
+          <img id="logo" src="src/img/logo.png" />
           <p id="slogan">
             记时光，<br /><span class="purple">多端同步</span>的<br />全能笔记。
           </p>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div id="timenote-top-right">
-          <img src="./public/img/top.png" />
+          <img src="src/img/top.png" />
         </div>
         <i
           onclick="window.location.href = '#timenote-design'"
@@ -69,7 +69,7 @@
           </p>
           <button id="design-download">下载体验</button>
         </div>
-        <img src="./public/img/design.png" />
+        <img src="src/img/design.png" />
       </div>
       <div id="timenote-features">
         <p class="features-main-title">
@@ -78,35 +78,35 @@
         <div id="all-features">
           <div class="features-div" id="safe-save">
             <div class="features-content-div">
-              <img class="icon" src="./public/img/icon_save.png" />
+              <img class="icon" src="src/img/icon_save.png" />
               <p class="features-title">安全保存</p>
               <p class="features-message">
                 强保存和弱保存，<br />最大程度避免意外丢失
               </p>
             </div>
-            <img src="./public/img/safe-save.png" />
+            <img src="src/img/safe-save.png" />
           </div>
           <div class="features-div" id="format">
             <div class="features-content-div">
-              <img class="icon" src="./public/img/icon_text.png" />
+              <img class="icon" src="src/img/icon_text.png" />
               <p class="features-title">格式多样</p>
               <p class="features-message">
                 丰富多样的文本格式工具，
                 <br />自定义你的时光笔记。
               </p>
             </div>
-            <img src="./public/img/format.png" />
+            <img src="src/img/format.png" />
           </div>
           <div class="features-div" id="markdown">
             <div class="features-content-div">
-              <img class="icon" src="./public/img/icon_markdown.png" />
+              <img class="icon" src="src/img/icon_markdown.png" />
               <p class="features-title">Markdown</p>
               <p class="features-message">
                 畅快写作，
                 <br />即时预览。
               </p>
             </div>
-            <img src="./public/img/markdown.png" />
+            <img src="src/img/markdown.png" />
           </div>
         </div>
         <p class="features-main-title">笔记体验，<br />我们更进一步。</p>
@@ -120,7 +120,7 @@
             你可以随时随地在电脑、手机、平板上访问你的所有内容。
           </p>
         </div>
-        <img src="./public/img/device.png" />
+        <img src="src/img/device.png" />
         <div id="device-background"></div>
       </div>
       <div id="timenote-inspiration" class="card-div">
@@ -132,30 +132,30 @@
             还能快速在你的任意笔记中随时调用。
           </p>
         </div>
-        <img src="./public/img/inspiration.png" />
+        <img src="src/img/inspiration.png" />
         <div id="inspiration-background"></div>
       </div>
       <div id="timenote-download">
         <p id="download-title">下载记时光</p>
         <div id="download-versions">
-          <div class="download-card">
+          <div class="download-card" id="windows-version">
             <div class="download-content">
-              <img class="icon" src="./public/img/icon_windows.png" />
+              <img class="icon" src="src/img/icon_windows.png" />
               <p class="download-platform">Windows</p>
             </div>
             <div class="download-click">点击下载</div>
           </div>
-          <div class="download-card">
+          <div class="download-card" id="android-version">
             <div class="download-content">
-              <img class="icon" src="./public/img/icon_android.png" />
+              <img class="icon" src="src/img/icon_android.png" />
               <p class="download-platform">Android</p>
             </div>
             <div class="download-click">点击下载</div>
           </div>
-          <div class="download-card">
+          <div class="download-card" id="mac-version">
             <div class="download-content">
-              <img class="icon" src="./public/img/icon_linux.png" />
-              <p class="download-platform">Linux</p>
+              <img class="icon" src="src/img/icon_mac.png" />
+              <p class="download-platform">macOS</p>
             </div>
             <div class="download-click">点击下载</div>
           </div>
@@ -168,16 +168,28 @@
           </p>
           <p id="qq-group" class="card-36-text">QQ 群：1056051634</p>
         </div>
-        <img src="./public/img/feedback.png" />
+        <img src="src/img/feedback.png" />
       </div>
       <div id="footer">
         <div id="footer-website">
           <p>一个网址</p>
-          <img src="./public/img/logo.png" />
+          <img src="src/img/logo.png" />
         </div>
         <div id="footer-copyright">
           <p>balabalabala</p>
         </div>
+      </div>
+    </div>
+    <div id="dialogs">
+      <div id="dialog-test-version" class="dialog">
+        <p>
+          请注意，你现在下载的版本是<span style="font-weight: bold"
+            >尝鲜测试版本</span
+          >。<br />
+          在你使用之前需要知晓可能会存在功能无法正常使用，数据丢失的情况，还请谅解<br />
+          如果需要问题请及时向我们反馈。
+        </p>
+        <button id="close-test-version" class="dialog-button">明白了</button>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
